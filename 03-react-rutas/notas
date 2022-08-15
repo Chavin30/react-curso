@@ -1,0 +1,13 @@
+las rutas en versiones anteriores de react-routes-dom, deben ir de mas particular a general
+
+<route path="/user/profile" />
+<route path="user" />
+
+si quieres evitar el orden utiliza el atributo exact para buscar la ruta exacta
+
+<route exact path="/user" >
+<route exact path="/user/profile" >
+
+no debes utilizar el atributo exact cuando hay rutas dinamicas
+
+<route path="user/:name" />
